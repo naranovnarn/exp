@@ -2,8 +2,14 @@
  * Функция isEqualArrays стравнивает два массива,
  * значениями которых являются числа
 */
-function isEqualNumericArrays(a, b) {
-  return Boolean;
+function isEqualArrays(a, b) {
+  let sumA = a.reduce((sum, current) => sum + +current, 0);
+  let sumB = b.reduce((sum, current) => sum + +current, 0);
+  if ( sumA == sumB) {
+    return true;
+  }
+
+  return false;
 }
 
 isEqualArrays([4, 2], [4, 2]);
